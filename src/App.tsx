@@ -1,6 +1,9 @@
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
+
 const App = (): JSX.Element => {
   return (
-  <h1>Ñapa APP</h1>
+      <RouterProvider router={router} />
   )
 }
 

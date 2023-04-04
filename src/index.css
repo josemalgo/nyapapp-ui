@@ -1,0 +1,76 @@
+
+/* ------------------- IMPORTS --------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;400&display=swap');
+
+
+/* ------------------- ELEMENTOS COMUNES --------------------- */
+
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+body {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------- VARIABLES --------------------- */
+
+:root {
+    --font-title: 'Lato', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+    
+    /* Colores background-color: var(--color-subtle);*/  
+    --secundary-color: #323fa2;
+    --primary-color: #cae3ff;
+}
+
+#root {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: 10px solid #f2f;
+}
+
+/* ------------------- HOME --------------------- */
+
+#panel-info {
+    flex: 1;
+    width: 100%;
+    border: 10px solid #000;
+}
+
+/* ------------------- MENU --------------------- */
+
+#sidebar {
+    width: 220px;
+    height: 100vh;
+    padding: 10px;
+    background-color: var(--secundary-color);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 25%);
+    border: 10px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar a{
+    color: #fff;
+}
