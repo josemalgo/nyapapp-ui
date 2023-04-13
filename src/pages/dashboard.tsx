@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Menu from '../components/menu'
 
-const Home = (): JSX.Element => {
+const Dashboard = (): JSX.Element => {
   return (
     <>
       <Menu />
@@ -12,4 +12,4 @@ const Home = (): JSX.Element => {
   )
 }
 
-export default Home
+export default Dashboard

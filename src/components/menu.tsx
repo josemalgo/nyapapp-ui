@@ -1,4 +1,10 @@
-import { Link } from 'react-router-dom'
+import MenuItem from './meniItem'
+
+const menuOptions = [
+  'Dashboard',
+  'Products',
+  'Customers'
+]
 
 const Menu = (): JSX.Element => {
   return (
@@ -7,12 +13,9 @@ const Menu = (): JSX.Element => {
         <h1>ÑAPAPP</h1>
         <nav>
           <ul>
-              <li>
-                  <Link to="/">Dashboard</Link>
-             </li>
-              <li>
-                  <Link to="/product">Products</Link>
-              </li>
+              {menuOptions.map((option) => {
+                return <MenuItem key={option} option={option}/>
+              })}
           </ul>
           </nav>
       </div>

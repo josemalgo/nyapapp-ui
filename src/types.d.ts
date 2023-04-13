@@ -17,3 +17,7 @@ export type ListOfProducts = Product[]
 export interface Props {
   products: ListOfProducts
 }
+
+export interface PropsMenuOption {
+  option: string
+}
